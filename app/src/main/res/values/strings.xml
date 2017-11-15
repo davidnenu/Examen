@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Examen 1ª Eval (Noviembre)</string>
+    <string name="ejercicio_1">Actividad 1</string>
+    <string name="ejercicio_2">Actividad 2</string>
+    <string name="ejerccicio_3">Actividad 3</string>
+    <string name="ejercicio_3">Actividad 4</string>
+    <string name="txtBtnSalir">Salir</string>
+    <string name="txtToast">Actividad no implementado por el momento</string>
+</resources>

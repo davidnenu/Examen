@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Selecciona provincia"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginStart="80dp"
+        android:layout_toEndOf="@+id/textView1"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="26dp"
+        android:text="Ubicacion: "
+        android:id="@+id/textUbicacion"
+        android:visibility="invisible"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textUbicacion"
+        android:layout_toEndOf="@+id/textView1"
+        android:id="@+id/radioGroup2"
+        android:visibility="invisible">
+
+
+        <RadioButton
+            android:id="@+id/radioInterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interior" />
+
+        <RadioButton
+            android:id="@+id/radioCosta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Costa" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnVisualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_marginTop="15dp"
+        android:text="VISUALIZAR LISTA"
+        android:onClick="visualizar"/>
+
+
+</RelativeLayout>

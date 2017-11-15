@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Selecciona el tipo de operaciones
+        que deeas realizar"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="38dp"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:id="@+id/radioSumas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="12dp"
+            android:text="Sumas"/>
+        <RadioButton
+            android:id="@+id/radioRestas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="12dp"
+            android:text="Restas" />
+        <RadioButton
+            android:id="@+id/radioMultiplicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="12dp"
+            android:text="Multiplicaciones" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="EMPEZAR"
+        android:id="@+id/btnEmpezar"
+        android:onClick="empezar"/>
+
+    <EditText
+        android:id="@+id/txtSoluciones"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnEmpezar"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/holo_blue_light"
+        android:enabled="false"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtSolucionesEdit"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSoluciones"
+        android:layout_alignBottom="@+id/txtSoluciones"
+        android:layout_alignEnd="@+id/btnEvaluar"
+        android:layout_toEndOf="@+id/txtSoluciones"
+        android:textSize="30sp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnEvaluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtSoluciones"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="25dp"
+        android:text="EVALUAR"
+        android:visibility="invisible"
+        android:onClick="evaluar"/>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnEvaluar"
+        android:layout_marginStart="24dp"
+        android:text="Volver"
+        android:onClick="volver"/>
+
+
+</RelativeLayout>

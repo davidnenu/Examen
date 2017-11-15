@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">1st Evaluation Test (November)</string>
+    <string name="ejercicio_1">Activity 1</string>
+    <string name="ejercicio_2">Activity 2</string>
+    <string name="ejerccicio_3">Activity 3</string>
+    <string name="ejercicio_3">Activity 4</string>
+    <string name="txtBtnSalir">Exit</string>
+    <string name="txtToast">Activity not implemented yet</string>
+</resources>
